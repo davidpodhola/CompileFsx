@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CompileFsx", "CompileFsx.fsproj", "{29DEEFDE-27C3-4A9B-A621-62E2033703E9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FLib", "FLib\FLib.fsproj", "{DC649303-59DC-4ED5-8E16-4B378A4CDAE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{0ABC1524-D002-4EB8-BC2E-A6242483D2A6}"
+	ProjectSection(SolutionItems) = preProject
+		C:\dev\thor\build.bat = C:\dev\thor\build.bat
+		C:\dev\thor\build.fsx = C:\dev\thor\build.fsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29DEEFDE-27C3-4A9B-A621-62E2033703E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DEEFDE-27C3-4A9B-A621-62E2033703E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DEEFDE-27C3-4A9B-A621-62E2033703E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DEEFDE-27C3-4A9B-A621-62E2033703E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC649303-59DC-4ED5-8E16-4B378A4CDAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC649303-59DC-4ED5-8E16-4B378A4CDAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC649303-59DC-4ED5-8E16-4B378A4CDAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC649303-59DC-4ED5-8E16-4B378A4CDAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
