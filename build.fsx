@@ -1,7 +1,6 @@
-﻿#r @"packages/FAKE/tools/FakeLib.dll"
-open Fake
-open Fake.FscHelper
+﻿#r "packages/FAKE/tools/FakeLib.dll"
 
+open Fake
 
 let sourceDir = __SOURCE_DIRECTORY__
 FileUtils.chdir sourceDir
@@ -28,8 +27,15 @@ Target "CompileFsx" (fun _ ->
         let dir = DirectoryName file
         FileUtils.chdir dir
         [file]
-        |> Fsc (fun p -> {p with OtherParams = [ "-I:bin/Debug" ] } )
+        |> FscHelper.compile [
+            FscHelper.UseFscExe
+            FscHelper.Lib [ "bin/Debug" ]
+        ]
+        |> function
+            | 0 -> ()
+            | _ -> failwithf "Cannot compile %s" file
 )
+
 
 Target "Default" (fun _ ->
     trace "Hello World!"
